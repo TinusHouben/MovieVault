@@ -30,9 +30,7 @@
 .footer{
     background-color: #523b3b;
     overflow: hidden;
-    width: 100%;
- /*   position: fixed;
-    bottom: 0; */
+    width: 100%; 
 }
 
 .footer a{
@@ -46,11 +44,11 @@
 
 .inhoud {
   display: flex;
-  flex-direction: column; 
-  justify-content: center;
+  flex-direction: row; 
+  justify-content: space-around;
   align-items: center;
   margin: 20px;
-  width: 100%;
+  width: 99%;
 }
 
 
@@ -91,7 +89,7 @@
   background-color: #575757;
 }
 
-  html, body {
+  body {
     margin: 0;
     padding: 0;
   }  
