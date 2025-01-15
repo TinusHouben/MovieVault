@@ -30,21 +30,186 @@
 .footer{
     background-color: #523b3b;
     overflow: hidden;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+ /*   position: fixed;
+    bottom: 0; */
 }
 
-  .footer a{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.footer a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.inhoud {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 100%;
+}
+
+
+.film-item {
+  width: 80%; 
+  max-width: 400px; 
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.film-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.film-item ol{
+  text-align: left;
+}
+
+.film-item p{
+  text-align: left;
+}
+
+.film-item button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.film-item button:hover {
+  background-color: #575757;
+}
 
   html, body {
     margin: 0;
     padding: 0;
   }  
+
+  .admin{
+    background-color: #523b3b;
+    color: red;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+  }
+
+.admin-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.admin-page h1 {
+  text-align: center;
+}
+
+
+.admin-page .search-container {
+  margin-bottom: 20px;
+}
+
+.admin-page .search-container input {
+  display: inline-block;
+  width: 80%;
+}
+
+.admin-page .search-container button {
+  display: inline-block;
+  width: 15%;
+  margin-left: 2%;
+}
+
+.admin-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-page table, .admin-page th, .admin-page td {
+  border: 1px solid #ccc;
+}
+
+.admin-page th, .admin-page td {
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-page th {
+  background-color: #f4f4f4;
+}
+
+.admin-page input, .admin-page textarea, .admin-page button {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.admin-page textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.admin-page button {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.admin-page button:hover {
+  background-color: #f0f0f0;
+}
+
+.contact-form {
+  margin: 20px;
+}
+
+#email, #message {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #575757;
+ 
+}
+
+.footerc{
+  background-color: #523b3b;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footerc a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 17px;
+}
