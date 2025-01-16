@@ -370,3 +370,77 @@ button:hover {
   font-size: 16px;
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 110%;
+    text-align: left;
+  }
+
+  .inhoud {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .film-item {
+    width: 98%;
+    max-width: none;
+    margin: 5px 0;
+  }
+
+  .login {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .admin-page .search-container input,
+  .admin-page .search-container button {
+    width: 98%;
+  }
+
+  .admin-page input,
+  .admin-page textarea,
+  .admin-page button {
+    max-width: 98%;
+  }
+
+  .footerc {
+    position: relative;
+    width: 98%;
+  }
+
+  .footerf {
+    width: 98%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .footerc ul li,
+  .footerf ul li {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar a {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .film-item {
+    width: 98%;
+    padding: 10px;
+  }
+
+  .film-item-details h2 {
+    font-size: 20px;
+  }
+
+  .film-item-details p {
+    font-size: 16px;
+  }
+}
