@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Pagina - Films</title>
     <link rel="stylesheet" href="MovieVault.css">
 </head>
+
 <body>
 
     <div class="admin-page">
         <h1>Admin Pagina MovieVault</h1>
-    
-        <div class="search-container">
-            <input type="text" placeholder="Zoek een film">
-            <button>Zoek</button>
-        </div>
+
         <h2>Film Toevoegen</h2>
         <form>
             <label for="filmnaam">Filmnaam:</label><br>
             <input type="text" id="filmnaam" name="filmnaam" placeholder="Voer de filmnaam in"><br><br>
 
-            <label for="jaar">Jaar:</label><br>
-            <input type="number" id="jaar" name="jaar" placeholder="Voer het jaar in"><br><br>
+            <label for="samenvatting">Samenvatting:</label><br>
+            <textarea id="samenvatting" name="samenvatting"
+                placeholder="Geef een samenvatting van de film"></textarea><br><br>
 
             <label for="cast">Cast:</label><br>
             <input type="text" id="cast" name="cast" placeholder="Voer de cast van de fim in"><br><br>
 
-            <label for="samenvatting">Samenvatting:</label><br>
-            <textarea id="samenvatting" name="samenvatting" placeholder="Geef een samenvatting van de film"></textarea><br><br>
+            <label for="taal">Taal:</label><br>
+            <input type="text" id="taal" name="taal" placeholder="Voer de taal van de fim in"><br><br>
 
-            <button type="submit">Voeg Film Toe</button>
+            <label for="duur">Duur:</label><br>
+            <input type="text" id="duur" name="duur" placeholder="Voer de duur van de fim in"><br><br>
+
+            <label for="jaar">Release date:</label><br>
+            <input type="date" id="jaar" name="jaar" placeholder="Voer de release date in"><br><br>
+
+            <label for="regisseur">Regisseur:</label><br>
+            <input type="text" id="regisseur" name="regisseur" placeholder="Voer de regisseur van de fim in"><br><br>
+
         </form>
 
-        <div>
-            <a href="MovieVault.html"><button>Home</button></a>
-        </div>
+        <button type="submit">Voeg Film Toe</button>
+        <a href="MovieVault.html"><button>Home</button></a>
 
+        <div class="search-container">
+            <input type="text" placeholder="Zoek een film">
+            <button>Zoek</button>
+        </div>
         <table>
             <thead>
-                <tr>                
+                <tr>
                     <th>Filmnaam</th>
                     <th>Jaar</th>
                     <th>Cast</th>
@@ -51,7 +61,9 @@
                     <td>Fast & Furious</td>
                     <td>2001</td>
                     <td>Matthew McConaughey, Anne Hathaway </td>
-                    <td>De straten van Los Angeles worden geteisterd door jongeren die in hun zwaar verbouwde auto's deelnemen aan illegale straatraces. Dominic Toretto is de leider van de straatbende die ervan wordt verdacht dure elektronische apparatuur te hebben gestolen.</td>
+                    <td>De straten van Los Angeles worden geteisterd door jongeren die in hun zwaar verbouwde auto's
+                        deelnemen aan illegale straatraces. Dominic Toretto is de leider van de straatbende die ervan
+                        wordt verdacht dure elektronische apparatuur te hebben gestolen.</td>
                     <td>
                         <button>Aanpassen</button>
                         <button>Verwijder</button>
@@ -61,18 +73,22 @@
                     <td>Good Fellas</td>
                     <td>1990</td>
                     <td>Ray Liotta, Rober De Niro</td>
-                    <td>Het verhaal van 13-jarige Henry Hill - half Iers en half Siciliaans - die opgroeit in een, door de maffia geregeerde, wijk in Brooklyn, New York. Een kroniek over de keerzijde van de gewelddadige onderwereld.</td>
+                    <td>Het verhaal van 13-jarige Henry Hill - half Iers en half Siciliaans - die opgroeit in een, door
+                        de maffia geregeerde, wijk in Brooklyn, New York. Een kroniek over de keerzijde van de
+                        gewelddadige onderwereld.</td>
                     <td>
                         <button>Aanpassen</button>
                         <button>Verwijder</button>
                     </td>
-                    
+
                 </tr>
                 <tr>
                     <td>Titanic</td>
                     <td>1997</td>
-                    <td>Kate Winslet, Leonardo DiCaprio</td> 
-                    <td>Engeland, 1912. Aan boord van de Titanic, het grootste passagiersschip ter wereld, wordt een jonge vrouw uit hoge sociale klasse verliefd op een straatarme kunstenaar. Na een dramatische gebeurtenis, begint voor beiden een liefdesverhaal over klassengrenzen heen.</td>
+                    <td>Kate Winslet, Leonardo DiCaprio</td>
+                    <td>Engeland, 1912. Aan boord van de Titanic, het grootste passagiersschip ter wereld, wordt een
+                        jonge vrouw uit hoge sociale klasse verliefd op een straatarme kunstenaar. Na een dramatische
+                        gebeurtenis, begint voor beiden een liefdesverhaal over klassengrenzen heen.</td>
                     <td>
                         <button>Aanpassen</button>
                         <button>Verwijder</button>
@@ -86,4 +102,5 @@
     </div>
 
 </body>
+
 </html>
